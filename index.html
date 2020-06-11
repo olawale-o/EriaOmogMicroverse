@@ -10,140 +10,115 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <!-- ==================================================================================-->
-  <!-- Header Begins-->
-
-    <header>
-      <div>
-        <div>
-            <a href="#"><img src="images/survey_logo.png" alt="Logo Image"></a>
-        </div>
-        <div>
-          <h1 id="title">Software Development Pre-Training Survey</h1>
-          <p id="description">DigitoMentor is committed to empower 10,000 youths across the globe with professional Software Development skills.</p>
-        </div>
-      </div>
-    </header>
-  
-  <!-- ==================================================================================-->
-  <!-- Header Ends-->
-
-  <!-- ==================================================================================-->
   <!-- Main Document Body Begins-->
   <main>
-    <section>
-      <div>
-        <div>
+    <div class="container">
+      <!-- ==================================================================================-->
+      <!-- Header Begins-->
+        <header class="header">
           <div>
+            <div>
+                <a href="#"><img src="images/survey_logo.png" alt="Logo Image"></a>
+            </div>
+            <div>
+              <h1 id="title">Software Development Pre-Training Survey</h1>
+              <p id="description">DigitoMentor is committed to empower 10,000 youths across the globe with professional Software Development skills.</p>
+            </div>
+          </div>
+        </header>
+
+      <!-- ==================================================================================-->
+      <!-- Header Ends-->
+      <div class="content">
+        <div class="learn">
             <h3>Learn More...</h3>
             <ul>
-              <li><a href="#">Modern JavaScript</a></li>
-              <li><a href="#">Cloud Computing</a></li>
-              <li><a href="#">Web Devlopment with HTML5</a></li>
-              <li><a href="#">The Magic of CSS3</a></li>
-              <li><a href="#">Explore Server Scripting</a></li>
+              <li><a href="#" class="links">Modern JavaScript</a></li>
+              <li><a href="#" class="links">Cloud Computing</a></li>
+              <li><a href="#" class="links">Web Devlopment with HTML5</a></li>
+              <li><a href="#" class="links">The Magic of CSS3</a></li>
+              <li><a href="#" class="links">Explore Server Scripting</a></li>
             </ul>
-          </div>
         </div>
-        <div>
+        <div class="survey-form">
           <form action="" id="survey-form">
-  
-              <div>
-  
+              <div class="field">
                 <label for="name" id="name-label">Name:<span class="asterisk">*</span></label>
-                <input type="text" id="name" name="name" placeholder="Pinyi Omogoon Microverse" required>
-              
+                <input type="text" id="name" class="input" name="name" placeholder="Pinyi Omoogun Microverse" required>
               </div>
-        
-              <div>
-                
-                <label for="email" id="email-label">Eamail:<span class="asterisk">*</span></label>
-                <input type="email" id="email" name="email" placeholder="eriaomog@gmail.com" required>	
-                
+
+              <div class="field">
+                <label for="email" id="email-label">Email:<span class="asterisk">*</span></label>
+                <input type="email" id="email" class="input" name="email" placeholder="eriaomoogun@gmail.com" required>
               </div>
-        
-              <div>
-                <input type="radio" id="male" name="sex" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="sex" value="female">
-                <label for="female">Female</label>
+
+              <div class="field">
+                <label for="sex" id="sex-label">Sex:<span class="asterisk">*</span></label>
+                <label for="male" class="sex-label">Male
+                  <input type="radio" id="male" name="sex" value="male">
+                </label>
+                <label for="female" class="sex-label">Female
+                  <input type="radio" id="female" name="sex" value="female">
+                </label>
               </div>
-        
-              <div>
-                <div>
-                  <label for="number" id="number-label">How long have you been programming?</label>
-                  <input type="number" id="number" min="0" max="3" placeholder="2"><span>Years</span>
-                </div>
+
+              <div class="field">
+                  <label for="number" id="number-label">How long have you been programming (years) ?</label>
+                  <input type="number" id="number" class="input" min="0" max="3" placeholder="2">
               </div>
-  
-              <div>
+
+              <div class="field">
                   <label for="skillPath">Select a skill path:</label>
-                  <select name="skillPath" id="dropdown">
+                  <select name="skillPath" id="dropdown" class="input">
+                    <option value="">Skill</option>
                     <option value="">Mobile Web Developer</option>
                     <option value="">Android Developer</option>
                     <option value="">Cloud Developer</option>
                   </select>
               </div>
-              
-              <div>
+
+              <div class="field">
                 <p>Which languages have you interacted with before?</p>
-  
-                <input type="checkbox" id="js" value="javaScript">
-                <label for="js">JavaScript</label>
-                <input type="checkbox" id="html" value="html">
-                <label for="html">HTML</label>
-                <input type="checkbox" id="java" value="java">
-                <label for="java">Java</label>
-                <input type="checkbox" id="php" value="php">
-                <label for="php">PHP</label>
-                <input type="checkbox" id="python" value="pyhton">
-                <label for="python">Python</label>
+                <label for="js">
+                  <input type="checkbox" id="js" class="checkbox" value="javaScript">
+                  JavaScript
+                </label>
+
+                <label for="html">
+                  <input type="checkbox" id="html" class="checkbox"  value="html">HTML
+                </label>
+
+                <label for="java">
+                  <input type="checkbox" id="java" class="checkbox" value="java">
+                  Java
+                </label>
+
+                <label for="php">
+                  <input type="checkbox" id="php" class="checkbox" value="php">
+                  PHP
+                </label>
+
+                <label for="python">
+                  <input type="checkbox" id="python" class="checkbox" value="pyhton">
+                  Python
+                </label>
               </div>
-              
-              <div>
-                  <label for="comment">Comment:</label><br>
-                  <textarea name="comment" id="comment" cols="50" rows="5" class="form-control"></textarea>
+
+              <div class="field">
+                  <label for="comment">Comment:</label>
+                  <textarea name="comment" id="comment" class="textarea" cols="50" rows="5" class="input"></textarea>
               </div>
-  
-              <div>
-                <button id="submit">Submit</button>
+              <div class="field">
+                <button id="submit" class="btn">Submit</button>
               </div>
-        
           </form>
         </div>
-        <div>
-          <div>
-            <iframe src="https://www.microverse.org/" frameborder="0"></iframe>
-          </div>
-          <p ><a href="https://www.microverse.org/" target="_blank">Join Microverse Today</a></p>
-          <div>
-            <iframe src="https://www.microverse.org/" frameborder="0"></iframe>
-          </div>
-          <p><a href="https://www.w3schools.com/" target="_blank">W3Schools.com Tutorials</a></p>
-          <div>
-            <iframe src="https://www.microverse.org/" frameborder="0"></iframe>
-          </div>
-          <p><a href="https://www.freecodecamp.org/" target="-blank">Hands-on With Freecodecamp.org</a></p>
-        </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <!-- ==================================================================================-->
   <!-- Main Document Body Begins-->
-
-
-  <!-- ==================================================================================-->
-  <!-- Footer Begins-->
-
-    <footer>
-      <p>It it Your Time to Shine!</p>
-      Visit <a href="https://www.w3schools.com/" target="_blank">W3Schools.com</a> | Visit <a href="https://www.freecodecamp.org/" target="-blank">Freecodecamp.org</a> | Join <a href="https://www.microverse.org/" target="_blank">Microverse.org</a> for Professional Skilling
-    </footer>
-
-    <!-- ==================================================================================-->
-  <!-- Footer Ends-->
-
-
     <!--
 
     Hello Camper!
